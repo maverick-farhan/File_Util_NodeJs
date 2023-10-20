@@ -19,6 +19,16 @@ else if(input[2]==='-h'){
     console.log(`node file.js -a fileToAdd "content to write")\n`.green);
     console.log(`node file.js -r fileToRemove (to delete)"\n`.red)
 }
+else if(input[2]==='-R'){
+    fs.readdir(dirPath,(err,files)=>{
+        console.log(`Here are files\n`.green);
+        if(files.length===0){
+            console.log("0")
+        }
+        else{
+        files.forEach((items,index) =>console.log(`(${index+1}) ${items}`.red))
+        }
+       })}
 else{
     console.log('Command Not Found. -flag \n');
 }
