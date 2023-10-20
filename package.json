@@ -1,0 +1,14 @@
+{
+  "name": "File Utility Beta",
+  "version": "1.0.0",
+  "description": "Making File Utility for handling file processes and management",
+  "main": "file.js",
+  "scripts": {
+    "start": "node file.js"
+  },
+  "author": "Mohammad Farhan",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
